@@ -11,6 +11,10 @@ $sql = 'Select * From categoria';
 $consulta = $con->query($sql);
 while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) {
 	print_r($linha);
+
+	$categoria = new Categoria();
+	$categoria->setIdcategoria($linha['idcategoria']);
+	$categoria->setCategoria($linha['categoria']);
 }
 
 // Com prepared statement
