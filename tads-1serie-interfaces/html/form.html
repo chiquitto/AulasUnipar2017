@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Página modelo</title>
+  </head>
+
+  <body>
+
+    <h1>Aula de formulários</h1>
+
+    <datalist id="celulares">
+      <option value="Samsung" />
+      <option value="Nokia" />
+      <option value="Motorola" />
+      <option value="Apple" />
+      <option value="Positivo" />
+    </datalist>
+
+    <form name="form" method="get"
+    action="">
+
+      <input type="hidden"
+      name="datahora" value="11/05/17 21:50" />
+
+      <p>
+        Nome completo: <input
+        name="nome"
+        type="text"
+        value="" />
+      </p>
+
+      <p>
+        Pesquisa: <input type="search"
+        name="pesq" />
+      </p>
+
+      <p>
+        Perfil facebook: <input
+        type="url" name="face"
+        placeholder="Usar o http://" />
+      </p>
+
+      <p>
+        Endereço de email: <input
+        type="email" name="email"
+        placeholder="Não esquecer o @"
+        required />
+      </p>
+
+      <p>
+        Senha da sua conta: <input
+        type="password" name="senha" />
+      </p>
+
+      <p>
+        Data de nascimento: <input
+        type="date" name="nascimento" />
+      </p>
+
+      <p>
+        Hora de nascimento: <input
+        type="time" name="horario"
+        readonly />
+      </p>
+
+      <p>
+        Sua idade: <input
+        type="number" name="idade"
+        value="20" min="10" max="30" step="5" />
+      </p>
+
+      <p>
+        Progresso: <input
+        type="range" name="progresso"
+        min="50" max="150" step="20" />
+      </p>
+
+      <p>
+        <input type="checkbox" name="miojo"
+        checked />
+        Gosto de miojo
+      </p>
+
+      <p>
+        <input type="checkbox" name="presente" />
+        Comprei presente pra minha mãe
+      </p>
+
+      <p>
+        Leite com
+
+        <input type="radio" name="leitecom"
+        value="toddy" /> Toddy
+
+        <input type="radio" name="leitecom"
+        value="quik" checked /> Quik
+
+        <input type="radio" name="leitecom"
+        value="nescau" /> Nescau
+      </p>
+
+      <p>
+        Foto: <input type="file"
+        name="foto" multiple />
+      </p>
+
+      <p>
+        Celular: <input type="text"
+        name="celular" list="celulares" />
+      </p>
+
+      <input type="submit"
+      name="botao" value="Clica em mim" />
+
+      <input type="reset"
+      name="limpar" value="Limpar" />
+
+    </form>
+
+  </body>
+</html>
+
+
+
+
+
+<!-- -->
